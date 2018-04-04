@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="145787f8-b151-49dc-818a-c4eb976624ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/views/login/login.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/views/login/login.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PolisNewsAssignment.iml" afterPath="$PROJECT_DIR$/.idea/PolisNewsAssignment.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/services/user.service.client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/views/home/home.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/views/home/home.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/models/user.model.server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/services/user.service.server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client/config.js" afterPath="$PROJECT_DIR$/public/client/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client/views/login/login.controller.js" afterPath="$PROJECT_DIR$/public/client/views/login/login.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client/views/login/login.view.html" afterPath="$PROJECT_DIR$/public/client/views/login/login.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app.js" afterPath="$PROJECT_DIR$/server/app.js" />
     </list>
     <ignored path="PolisNewsAssignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,49 +36,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#44#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding>
-                <marker date="1522878705000" expanded="true" signature="0:66" placeholder="{...}" />
-                <marker date="1522878705000" expanded="true" signature="12:64" placeholder="[...]" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34802786">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state vertical-scroll-proportion="-14.833333">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/client/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#44#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -85,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/public/client/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -96,8 +61,8 @@
       <file leaf-file-name="login.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/client/views/login/login.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="4" column="123" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -107,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/public/client/views/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -115,23 +80,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/client/css/style.css">
+      <file leaf-file-name="home.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/client/views/home/home.view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="home.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/client/views/home/home.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.333333">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <marker date="1522879179000" expanded="true" signature="555:633" placeholder="{&quot;angular&quot;: &quot;^1.6.9&quot;...}" />
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/client/services/user.service.client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/services/user.service.server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.72527474">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.model.server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/models/user.model.server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -141,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -167,15 +168,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/db.json" />
         <option value="$PROJECT_DIR$/public/client/app.js" />
-        <option value="$PROJECT_DIR$/public/client/views/login/login.controller.js" />
-        <option value="$PROJECT_DIR$/public/client/views/login/login.view.html" />
-        <option value="$PROJECT_DIR$/public/client/config.js" />
         <option value="$PROJECT_DIR$/public/client/css/style.css" />
+        <option value="$PROJECT_DIR$/public/client/services/user.service.client.js.html" />
+        <option value="$PROJECT_DIR$/public/client/views/login/login.view.html" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/public/client/services/user.service.client.js" />
+        <option value="$PROJECT_DIR$/public/client/views/home/home.view.html" />
+        <option value="$PROJECT_DIR$/public/client/views/home/home.controller.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/client/config.js" />
+        <option value="$PROJECT_DIR$/server/models/user.model.server.js" />
+        <option value="$PROJECT_DIR$/public/client/views/login/login.controller.js" />
+        <option value="$PROJECT_DIR$/server/services/user.service.server.js" />
       </list>
     </option>
   </component>
@@ -230,6 +237,56 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,7 +366,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PolisNewsAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,7 +468,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -393,7 +476,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -418,65 +501,34 @@
         <state vertical-scroll-proportion="-0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <marker date="1522879179000" expanded="true" signature="136:391" placeholder="{&quot;version&quot;: &quot;1.3.5&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="314:385" placeholder="{&quot;mime-types&quot;: &quot;2.1.18&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="657:833" placeholder="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="854:1343" placeholder="{&quot;version&quot;: &quot;1.18.2&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="1042:1337" placeholder="{&quot;bytes&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="1358:1518" placeholder="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="1757:1993" placeholder="{&quot;version&quot;: &quot;1.0.4&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="2009:2171" placeholder="{&quot;version&quot;: &quot;0.3.1&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="2394:2667" placeholder="{&quot;version&quot;: &quot;2.6.9&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="2630:2661" placeholder="{&quot;ms&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="2681:2839" placeholder="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="2856:3020" placeholder="{&quot;version&quot;: &quot;1.0.4&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="3038:3204" placeholder="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="3223:3391" placeholder="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="3412:3584" placeholder="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="3598:3756" placeholder="{&quot;version&quot;: &quot;1.8.1&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="3773:4887" placeholder="{&quot;version&quot;: &quot;4.16.3&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="3953:4881" placeholder="{&quot;accepts&quot;: &quot;1.3.5&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="4909:5378" placeholder="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="5159:5372" placeholder="{&quot;debug&quot;: &quot;2.6.9&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="5397:5565" placeholder="{&quot;version&quot;: &quot;0.1.2&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="5580:5740" placeholder="{&quot;version&quot;: &quot;0.5.2&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="14230:14236" placeholder="{&quot;version&quot;: &quot;1.4.0&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="14253:14573" placeholder="{&quot;version&quot;: &quot;1.6.16&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="14495:14567" placeholder="{&quot;media-typer&quot;: &quot;0.3.0&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="14589:14751" placeholder="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="14772:14944" placeholder="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1522879179000" expanded="true" signature="14958:15116" placeholder="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <marker date="1522878705000" expanded="true" signature="0:66" placeholder="{...}" />
-            <marker date="1522878705000" expanded="true" signature="12:64" placeholder="[...]" />
+            <marker date="1522884451000" expanded="true" signature="136:391" placeholder="{&quot;version&quot;: &quot;1.3.5&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="314:385" placeholder="{&quot;mime-types&quot;: &quot;2.1.18&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="657:833" placeholder="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="854:1343" placeholder="{&quot;version&quot;: &quot;1.18.2&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="1042:1337" placeholder="{&quot;bytes&quot;: &quot;3.0.0&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="1358:1518" placeholder="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="1757:1993" placeholder="{&quot;version&quot;: &quot;1.0.4&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="2009:2171" placeholder="{&quot;version&quot;: &quot;0.3.1&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="2394:2667" placeholder="{&quot;version&quot;: &quot;2.6.9&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="2630:2661" placeholder="{&quot;ms&quot;: &quot;2.0.0&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="2681:2839" placeholder="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="2856:3020" placeholder="{&quot;version&quot;: &quot;1.0.4&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="3038:3204" placeholder="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="3223:3391" placeholder="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="3412:3584" placeholder="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="3598:3756" placeholder="{&quot;version&quot;: &quot;1.8.1&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="3773:4887" placeholder="{&quot;version&quot;: &quot;4.16.3&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="3953:4881" placeholder="{&quot;accepts&quot;: &quot;1.3.5&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="4909:5378" placeholder="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="5159:5372" placeholder="{&quot;debug&quot;: &quot;2.6.9&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="5397:5565" placeholder="{&quot;version&quot;: &quot;0.1.2&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="5580:5740" placeholder="{&quot;version&quot;: &quot;0.5.2&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="14393:14399" placeholder="{&quot;version&quot;: &quot;1.4.0&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="14416:14736" placeholder="{&quot;version&quot;: &quot;1.6.16&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="14658:14730" placeholder="{&quot;media-typer&quot;: &quot;0.3.0&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="14752:14914" placeholder="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="14935:15107" placeholder="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="15121:15279" placeholder="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -486,18 +538,16 @@
         <state vertical-scroll-proportion="-12.333333">
           <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
-            <marker date="1522879179000" expanded="true" signature="555:633" placeholder="{&quot;angular&quot;: &quot;^1.6.9&quot;...}" />
+            <marker date="1522884451000" expanded="true" signature="555:652" placeholder="{&quot;angular&quot;: &quot;^1.6.9&quot;...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/client/views/login/login.controller.js">
+    <entry file="file://$PROJECT_DIR$/public/client/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -511,10 +561,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/client/services/user.service.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/client/views/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="123" selection-start-line="4" selection-start-column="123" selection-end-line="4" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/client/views/home/home.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/client/views/home/home.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.833333">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -522,26 +636,40 @@
     <entry file="file://$PROJECT_DIR$/public/client/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/client/css/style.css">
+    <entry file="file://$PROJECT_DIR$/public/client/views/login/login.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/server/models/user.model.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34802786">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/services/user.service.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72527474">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,5 +20,5 @@ const adapter = new FileSync('db.json');
 const db = low(adapter);
 
 
-require("./server/app.js")(app);
+require("./server/app.js")(app, db);
 app.listen(port);
