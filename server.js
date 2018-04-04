@@ -12,5 +12,13 @@ app.use(express.static(__dirname +'/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+//database
+const low = require('lowdb');
+const FileSync = require('lowdb/adapters/FileSync');
+
+const adapter = new FileSync('db.json');
+const db = low(adapter);
+
+
 require("./server/app.js")(app);
 app.listen(port);
