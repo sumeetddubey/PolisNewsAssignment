@@ -1,10 +1,13 @@
 <div>
-    <div class="jumbotron" ng-repeat="article in model.articles">
-        <h2 class="display-6">{{article.title}}</h2>
+    <a ng-href="#/dashboard">Back to Dashboard</a>
+    <div class="mt-5 jumbotron" ng-repeat="article in model.articles">
+        <h2>{{article.title}}</h2>
         <p>{{model.convertDate(article.publishedAt)}}</p>
         <p class="lead">{{article.description}}</p>
         <hr class="my-4">
         <!--<a ng-href="{{article.url}}" target="_blank">Link to article</a>-->
         <a ng-href="{{article.url}}" target="_blank"><img class="article-image" ng-src="{{article.urlToImage}}"></a>
+        <a ng-click="model.saveArticle(article)">vlc</a>
+        <img ng-click="model.saveArticle(article)" ng-src="{{model.isFavorite(article)}}">
     </div>
 </div>

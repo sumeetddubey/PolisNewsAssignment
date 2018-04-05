@@ -5,7 +5,8 @@ module.exports = function(db){
     var q = require('q');
 
     var api={
-        findUserByUsername: findUserByUsername
+        findUserByUsername: findUserByUsername,
+        saveArticleForUser: saveArticleForUser
     };
 
     return api;
@@ -16,6 +17,13 @@ module.exports = function(db){
         deferred.resolve(user);
         return deferred.promise;
     }
+
+    function saveArticleForUser(username, article){
+        var deferred = q.defer();
+        deferred.resolve(db.get('users').find({username: username}).get('newsSources').push('abc').write());
+        return deferred.promise;
+    }
+
 };
 
 

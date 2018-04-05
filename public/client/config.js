@@ -44,5 +44,12 @@
                 controllerAs: 'model'
             })
 
+        $routeProvider
+            .when('/savedArticles', {
+                templateUrl: 'client/views/savedArticles/savedArticles.view.html',
+                controller: 'SavedArticlesController',
+                controllerAs: 'model'
+            })
+
     })
 })();

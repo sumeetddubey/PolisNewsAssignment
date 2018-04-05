@@ -8,19 +8,6 @@
     function SourcesController(NewsService){
         var vm=this;
 
-        vm.sources=[];
-        function getAllSources(){
-            NewsService.getSourcesFromApi()
-                .then(
-                    function(res){
-                        vm.sources=res.data.sources;
-                    },
-                    function(err){
-                        console.log(err);
-                    }
-                )
-        }
-
-        getAllSources();
+        vm.sources=NewsService.getSources();
     }
 })();

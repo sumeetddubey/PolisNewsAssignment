@@ -9,7 +9,9 @@
         var api={
             loginUser: loginUser,
             getUser: getUser,
-            setUser: setUser
+            setUser: setUser,
+            saveArticle: saveArticle,
+            getSavedArticlesForUser: getSavedArticlesForUser
         };
         return api;
 
@@ -23,6 +25,14 @@
 
         function setUser(user){
             $rootScope.user = user;
+        }
+
+        function saveArticle(user, article){
+            return $http.put('/api/user/articles/saved/'+user.username, article);
+        }
+
+        function getSavedArticlesForUser(username){
+            return $http.get('/api/user/articles/saved?username=' +username);
         }
     }
 })();

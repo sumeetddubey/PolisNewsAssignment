@@ -1,5 +1,111 @@
 {
-  "users":[
-    {"username": "sumeet@abc.com", "password": "pass@123", "newsSources": ["bbc-news", "the-verge"]}
+  "users": [
+    {
+      "username": "sumeet@abc.com",
+      "password": "pass@123",
+      "newsSources": [
+        "bbc-news",
+        "the-verge",
+        "abc",
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC Three",
+          "title": "Arrest warrant 'issued for Conor McGregor' after havoc at media day event",
+          "description": "",
+          "url": "http://www.bbc.co.uk/bbcthree/article/e6a8ec30-a45e-48aa-8068-978e23723d61",
+          "urlToImage": "http://ichef.bbci.co.uk/images/ic/704xn/p05zrq20.jpg",
+          "publishedAt": "2018-04-05T20:30:05.6800624Z"
+        }
+      ],
+      "savedArticles": [
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC Three",
+          "title": "Arrest warrant 'issued for Conor McGregor' after havoc at media day event",
+          "description": "",
+          "url": "http://www.bbc.co.uk/bbcthree/article/e6a8ec30-a45e-48aa-8068-978e23723d61",
+          "urlToImage": "http://ichef.bbci.co.uk/images/ic/704xn/p05zrq20.jpg",
+          "publishedAt": "2018-04-05T20:30:05.6800624Z"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC News",
+          "title": "Russia says UK is 'playing with fire'",
+          "description": "Moscow's UN ambassador accuses the UK of inventing a \"fake story\" over the Salisbury spy poisoning,",
+          "url": "http://www.bbc.co.uk/news/uk-43662421",
+          "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/branded_news/E362/production/_100701285_skripal_comp-1.jpg",
+          "publishedAt": "2018-04-05T19:54:31Z"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC News",
+          "title": "Pressure builds on Trump environment chief",
+          "description": "The White House is said to be losing patience as Scott Pruitt faces allegations of ethics violations.",
+          "url": "http://www.bbc.co.uk/news/world-us-canada-43658331",
+          "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/branded_news/D374/production/_100723145_tv045918093.jpg",
+          "publishedAt": "2018-04-05T19:20:25Z"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC News",
+          "title": "Americans urged to carry opioid antidote",
+          "description": "The US Surgeon General says more Americans should carry the drug naxolon to combat opioid overdoses.",
+          "url": "http://www.bbc.co.uk/news/world-us-canada-43659655",
+          "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/media/images/76453000/jpg/_76453035_emt_overdose_nosting.jpg",
+          "publishedAt": "2018-04-05T19:13:45Z"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC News",
+          "title": "Russian TV airs 'Skripal phone call'",
+          "description": "The recording is allegedly of a conversation between Yulia Skripal and her cousin Viktoria.",
+          "url": "http://www.bbc.co.uk/news/world-europe-43663007",
+          "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/branded_news/14070/production/_100723028_p063fgl2.jpg",
+          "publishedAt": "2018-04-05T18:32:20Z"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC News",
+          "title": "Cyclist sacked for insulting Trump sues",
+          "description": "Juli Briskman's lawyers argue her right to free speech was violated when she lost her job.",
+          "url": "http://www.bbc.co.uk/news/world-us-canada-43659653",
+          "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/FFD5/production/_98639456_gettyimages-867601574.jpg",
+          "publishedAt": "2018-04-05T16:31:59Z"
+        },
+        {
+          "source": {
+            "id": "bbc-news",
+            "name": "BBC News"
+          },
+          "author": "BBC News",
+          "title": "Trump 'unaware of porn star payment'",
+          "description": "The US president referred reporters to his lawyer, who made the $130,000 (£92,000) payment in 2016.",
+          "url": "http://www.bbc.co.uk/news/world-us-canada-43663757",
+          "urlToImage": "https://ichef-1.bbci.co.uk/news/1024/branded_news/2352/production/_100724090_mediaitem100724089.jpg",
+          "publishedAt": "2018-04-05T22:02:51Z"
+        }
+      ]
+    }
   ]
 }

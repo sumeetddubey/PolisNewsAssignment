@@ -16,12 +16,9 @@
                         UserService.setUser(doc.data);
                         $location.url('/dashboard');
                     }
-                    else{
-                        $window.alert('invalid credentials');
-                    }
                 },
                 function(err){
-                    console.log(err);
+                    $window.alert('invalid credentials');
                 })
         }
 
