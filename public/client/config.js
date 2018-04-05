@@ -21,6 +21,15 @@
                 templateUrl: 'client/views/home/home.view.html',
                 controller: 'HomeController',
                 controllerAs: 'model'
+            });
+
+        $routeProvider
+            .when('/sources', {
+                templateUrl: 'client/views/sources/sources.view.html',
+                controller: 'SourcesController',
+                controllerAs: 'model'
             })
+
+
     })
 })();

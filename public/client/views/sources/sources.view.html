@@ -1,4 +1,3 @@
-<h2>Home</h2>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" id="sources-tab" data-toggle="tab" ng-href="#sources" role="tab" aria-controls="sources" aria-selected="true">Sources</a>
@@ -10,3 +9,13 @@
         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
     </li>
 </ul>
+
+<div class="card-columns">
+<div class="card" ng-repeat="source in model.sources">
+    <div class="card-body">
+        <h5 class="card-title">{{source.name}}</h5>
+        <p class="card-text">{{source.description}}</p>
+        <a href="#" class="btn btn-primary">Add to my cards</a>
+    </div>
+</div>
+</div>
