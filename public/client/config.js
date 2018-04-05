@@ -28,8 +28,21 @@
                 templateUrl: 'client/views/sources/sources.view.html',
                 controller: 'SourcesController',
                 controllerAs: 'model'
-            })
+            });
 
+        $routeProvider
+            .when('/dashboard', {
+                templateUrl: 'client/views/dashboard/dashboard.view.html',
+                controller: 'DashboardController',
+                controllerAs: 'model'
+            });
+
+        $routeProvider
+            .when('/topArticles', {
+                templateUrl: 'client/views/topArticles/topArticles.view.html',
+                controller: 'TopArticlesController',
+                controllerAs: 'model'
+            })
 
     })
 })();

@@ -1,3 +1,23 @@
 body{
     margin: 20px;
 }
+
+.card-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card{
+    margin: 5px;
+    width: 30%;
+}
+
+.article-image{
+    width: 50vw;
+    height: auto;
+}
+
+.article-image:hover {
+    cursor: pointer;
+    outline: 2px solid black;
+} 

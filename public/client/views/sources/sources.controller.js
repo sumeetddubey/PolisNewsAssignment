@@ -10,7 +10,7 @@
 
         vm.sources=[];
         function getAllSources(){
-            NewsService.getAllSources()
+            NewsService.getSourcesFromApi()
                 .then(
                     function(res){
                         vm.sources=res.data.sources;

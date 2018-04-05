@@ -1,0 +1,10 @@
+<div>
+    <div class="jumbotron" ng-repeat="article in model.articles">
+        <h2 class="display-6">{{article.title}}</h2>
+        <p>{{article.publishedAt}}</p>
+        <p class="lead">{{article.description}}</p>
+        <hr class="my-4">
+        <!--<a ng-href="{{article.url}}" target="_blank">Link to article</a>-->
+        <a ng-href="{{article.url}}" target="_blank"><img class="article-image" ng-src="{{article.urlToImage}}"></a>
+    </div>
+</div>

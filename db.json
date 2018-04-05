@@ -1,5 +1,5 @@
 {
   "users":[
-    {"username": "user1", "password": "user1"}
+    {"username": "sumeet@abc.com", "password": "pass@123", "newsSources": ["bbc-news", "the-verge"]}
   ]
 }

@@ -5,7 +5,7 @@
     var app = angular.module('newsApp');
     app.controller('LoginController', LoginController);
 
-    function LoginController(UserService, $location, $window){
+    function LoginController(UserService, NewsService, $location, $window){
         var vm=this;
         vm.login=login;
 
@@ -13,7 +13,8 @@
             UserService.loginUser(user)
                 .then(function(doc){
                     if(doc.data){
-                        $location.url('/home');
+                        UserService.setUser(doc.data);
+                        $location.url('/dashboard');
                     }
                     else{
                         $window.alert('invalid credentials');
@@ -23,6 +24,8 @@
                     console.log(err);
                 })
         }
+
+
     }
 
 })();
