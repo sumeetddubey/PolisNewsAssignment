@@ -20,4 +20,9 @@ body{
 .article-image:hover {
     cursor: pointer;
     outline: 2px solid black;
-} 
+}
+
+.icon-favorite{
+    cursor: pointer;
+    float: right;
+}

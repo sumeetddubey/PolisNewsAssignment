@@ -7,7 +7,6 @@
         <hr class="my-4">
         <!--<a ng-href="{{article.url}}" target="_blank">Link to article</a>-->
         <a ng-href="{{article.url}}" target="_blank"><img class="article-image" ng-src="{{article.urlToImage}}"></a>
-        <a ng-click="model.saveArticle(article)">vlc</a>
-        <img ng-click="model.saveArticle(article)" ng-src="{{model.isFavorite(article)}}">
+        <img class="icon-favorite" ng-click="model.saveArticle(article)" ng-src="{{model.isFavorite(article)}}">
     </div>
 </div>
