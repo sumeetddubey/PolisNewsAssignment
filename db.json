@@ -5,20 +5,10 @@
       "password": "pass@123",
       "newsSources": [
         "bbc-news",
-        "the-verge",
-        "abc",
-        {
-          "source": {
-            "id": "bbc-news",
-            "name": "BBC News"
-          },
-          "author": "BBC Three",
-          "title": "Arrest warrant 'issued for Conor McGregor' after havoc at media day event",
-          "description": "",
-          "url": "http://www.bbc.co.uk/bbcthree/article/e6a8ec30-a45e-48aa-8068-978e23723d61",
-          "urlToImage": "http://ichef.bbci.co.uk/images/ic/704xn/p05zrq20.jpg",
-          "publishedAt": "2018-04-05T20:30:05.6800624Z"
-        }
+        "al-jazeera-english",
+        "aftenposten",
+        "abc-news-au",
+        "abc-news"
       ],
       "savedArticles": [
         {
@@ -116,6 +106,30 @@
           "url": "http://www.bbc.co.uk/news/world-us-canada-43663447",
           "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/34DC/production/_100723531_img_0611.jpg",
           "publishedAt": "2018-04-05T22:15:44Z"
+        },
+        {
+          "source": {
+            "id": "abc-news",
+            "name": "ABC News"
+          },
+          "author": "ABC News",
+          "title": "China files complaint over US tariff measures",
+          "description": "The move comes as both the U.S. and China threaten tariffs.",
+          "url": "http://abcnews.go.com/International/china-files-complaint-us-tariff-measures/story?id=54259862",
+          "urlToImage": "https://s.abcnews.com/images/International/china-tariff-nc-jpo-180405_hpMain_16x9_992.jpg",
+          "publishedAt": "2018-04-05T00:00:00Z"
+        },
+        {
+          "source": {
+            "id": "abc-news",
+            "name": "ABC News"
+          },
+          "author": "ABC News",
+          "title": "New York attorney general opens probe into police shooting of man who pointed pipe",
+          "description": "The New York state attorney general has opened an investigation into the death of a black man, who was allegedly pointing a pipe at police officers in when they shot him.",
+          "url": "http://abcnews.go.com/US/york-attorney-general-opens-probe-police-shooting-man/story?id=54255422",
+          "urlToImage": "https://s.abcnews.com/images/US/brooklyn-man-shot-police-pipe-ht-ps-180405_hpMain_16x9_992.jpg",
+          "publishedAt": "2018-04-05T00:00:00Z"
         }
       ]
     }

@@ -5,7 +5,7 @@
     var app = angular.module('newsApp');
     app.controller("TopArticlesController", TopArticlesController);
 
-    function TopArticlesController(NewsService, UserService){
+    function TopArticlesController(NewsService, UserService, toastr){
         var vm=this;
 
         vm.saveArticle=saveArticle;
@@ -29,10 +29,10 @@
                 .then(
                     function(doc){
                         if(doc.status===201)
-                            window.alert("already exists");
+                            toastr.error('Article already exists in favorites!');
                         else{
                             favorites[article.url]=true;
-                            console.log(favorites);
+                            toastr.success('Article added to favorites');
                         }
                     },
                     function(err){

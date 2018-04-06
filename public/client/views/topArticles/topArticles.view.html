@@ -5,7 +5,6 @@
         <p>{{model.convertDate(article.publishedAt)}}</p>
         <p class="lead">{{article.description}}</p>
         <hr class="my-4">
-        <!--<a ng-href="{{article.url}}" target="_blank">Link to article</a>-->
         <a ng-href="{{article.url}}" target="_blank"><img class="article-image" ng-src="{{article.urlToImage}}"></a>
         <img class="icon-favorite" ng-click="model.saveArticle(article)" ng-src="{{model.isFavorite(article)}}">
     </div>
