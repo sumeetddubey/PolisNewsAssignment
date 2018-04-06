@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "username": "sumeet@abc.com",
-      "password": "pass@123",
+      "username": "user1",
+      "password": "user1",
       "newsSources": [
         "bbc-news",
         "al-jazeera-english",
@@ -120,6 +120,12 @@
           "publishedAt": "2018-04-06T01:06:39Z"
         }
       ]
+    },
+    {
+      "username": "user2",
+      "password": "user2",
+      "newsSources":[],
+      "savedArticles":[]
     }
   ]
 }
