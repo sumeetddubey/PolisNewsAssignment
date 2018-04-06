@@ -8,6 +8,7 @@
     function UserService($http, $localStorage){
         var api={
             loginUser: loginUser,
+            createUser: createUser,
             getUser: getUser,
             setUser: setUser,
             saveArticle: saveArticle,
@@ -22,6 +23,10 @@
 
         function loginUser(user){
             return $http.post("/api/login", user);
+        }
+
+        function createUser(user){
+            return $http.post('/api/register', user);
         }
 
         function getUser(){

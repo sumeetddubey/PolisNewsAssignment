@@ -3,6 +3,7 @@
  */
 module.exports = function(app, db){
     app.post("/api/login", login);
+    app.post('/api/register', register);
     app.put('/api/user/articles/saved/:username', saveArticleForUser);
     app.get('/api/user/articles/saved', getSavedArticlesForUser);
     app.put('/api/user/:username/articles/saved/', deleteSavedArticleForUser);
@@ -19,6 +20,24 @@ module.exports = function(app, db){
             res.status(401).send();
         }
         res.status(401).send();
+    }
+
+    function register(req, res){
+        var username=req.body.username;
+        var password=req.body.password;
+        var user = db.get('users').find({username: username}).value();
+        if(user){
+            res.status(201).send();
+            return;
+        }
+        db.get('users').push({
+            'username': username,
+            'password': password,
+            'newsSources': [],
+            'savedArticles': []
+        }).write();
+        user=db.get('users').find({'username': username}).value();
+        res.status(200).send(user);
     }
 
     function saveArticleForUser(req, res){
@@ -92,5 +111,4 @@ module.exports = function(app, db){
         else
             res.status(400).send();
     }
-
 };

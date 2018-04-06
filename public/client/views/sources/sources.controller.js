@@ -10,6 +10,7 @@
 
         vm.addSource=addSource;
         vm.sources=NewsService.getSources();
+        var userSources=UserService.getCurrentSources();
 
         function addSource(sourceId){
             if(UserService.getCurrentSources().length>=5){

@@ -13,6 +13,12 @@
                 controllerAs: 'model'
             })
 
+            .when('/register', {
+                templateUrl: 'client/views/register/register.view.html',
+                controller: 'RegisterController',
+                controllerAs: 'model'
+            })
+
             .when('/sources', {
                 templateUrl: 'client/views/sources/sources.view.html',
                 controller: 'SourcesController',

@@ -1,7 +1,6 @@
 /**
  * Created by sumeetdubey on 4/4/18.
  */
-
 var express=require('express');
 var bodyParser=require('body-parser');
 
@@ -15,7 +14,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 //database
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
-
 const adapter = new FileSync('db.json');
 const db = low(adapter);
 

@@ -15,14 +15,13 @@
         };
 
         var favorites={};
-        vm.isFavorite=function(article){
+        vm.isSaved=function(article){
             if(article.url in favorites)
                 return "client/static/icons/favoriteRed.png";
-            return "client/static/icons/favorite.png";
+            return "client/static/icons/favoriteWhite.png";
         };
 
         vm.articles = NewsService.getArticles();
-        console.log(vm.articles[0]);
 
         function saveArticle(article){
             UserService.saveArticle(UserService.getUser(), article)
