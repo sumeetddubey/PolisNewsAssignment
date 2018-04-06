@@ -5,7 +5,7 @@
     var app = angular.module('newsApp');
     app.service('NewsService', NewsService);
 
-    function NewsService($http, $rootScope){
+    function NewsService($http, $localStorage){
         var api={
             getSourcesFromApi: getSourcesFromApi,
             getSources: getSources,
@@ -22,11 +22,11 @@
         }
 
         function getSources(){
-            return $rootScope.sources;
+            return $localStorage.sources;
         }
 
         function setSources(sources){
-            $rootScope.sources = sources;
+            $localStorage.sources = sources;
         }
 
         function getTopArticlesBySource(sourceId){
@@ -34,11 +34,11 @@
         }
 
         function getArticles(){
-            return $rootScope.articles;
+            return $localStorage.articles;
         }
 
         function setArticles(articles){
-            $rootScope.articles = articles;
+            $localStorage.articles = articles;
         }
     }
 })();

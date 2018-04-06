@@ -26,3 +26,8 @@ body{
     cursor: pointer;
     float: right;
 }
+
+.btn-logout{
+    margin-top: 10px;
+    float:right;
+}

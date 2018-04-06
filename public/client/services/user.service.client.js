@@ -5,7 +5,7 @@
     var app = angular.module('newsApp');
     app.service("UserService", UserService);
 
-    function UserService($http, $rootScope){
+    function UserService($http, $localStorage){
         var api={
             loginUser: loginUser,
             getUser: getUser,
@@ -24,11 +24,11 @@
         }
 
         function getUser(){
-            return $rootScope.user;
+            return $localStorage.user;
         }
 
         function setUser(user){
-            $rootScope.user = user;
+            $localStorage.user = user;
         }
 
         function saveArticle(user, article){
@@ -48,11 +48,11 @@
         }
 
         function getCurrentSources(){
-            return $rootScope.user.newsSources;
+            return $localStorage.user.newsSources;
         }
 
         function setCurrentSources(sources){
-            $rootScope.user.newsSources=sources;
+            $localStorage.user.newsSources=sources;
         }
     }
 })();

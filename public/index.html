@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="newsApp">
+<html lang="en" ng-app="newsApp" ng-controller="MainController as model">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
@@ -13,7 +13,10 @@
 </head>
 <body>
 <div class="container">
-    <h2>News App</h2>
+    <div class="row">
+        <div class="col-10"><h2>News App</h2></div>
+        <div class="col-2"><button ng-show="model.loggedIn()" ng-click="model.logout()" class="btn btn-danger btn-logout">Logout</button></div>
+    </div>
     <div ng-view></div>
 </div>
 
@@ -24,13 +27,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 <script src="https://unpkg.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
 
 <script src="client/app.js"></script>
 <script src="client/config.js"></script>
 
 <!--controllers-->
+<script src="client/main.controller.js"></script>
 <script src="client/views/login/login.controller.js"></script>
-<script src="client/views/home/home.controller.js"></script>
 <script src="client/views/sources/sources.controller.js"></script>
 <script src="client/views/dashboard/dashboard.controller.js"></script>
 <script src="client/views/topArticles/topArticles.controller.js"></script>

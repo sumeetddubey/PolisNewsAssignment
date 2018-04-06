@@ -5,7 +5,7 @@
     var app = angular.module('newsApp');
     app.controller("SavedArticlesController", SavedArticlesController);
 
-    function SavedArticlesController(NewsService, UserService){
+    function SavedArticlesController(UserService){
         var vm=this;
 
         vm.convertDate = function(ipDate){

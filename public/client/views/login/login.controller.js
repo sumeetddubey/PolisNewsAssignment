@@ -5,7 +5,7 @@
     var app = angular.module('newsApp');
     app.controller('LoginController', LoginController);
 
-    function LoginController(UserService, NewsService, $location, $window){
+    function LoginController(UserService, $location, toastr){
         var vm=this;
         vm.login=login;
 
@@ -18,7 +18,7 @@
                     }
                 },
                 function(err){
-                    $window.alert('invalid credentials');
+                    toastr.error('Invalid credentials')
                 })
         }
 
