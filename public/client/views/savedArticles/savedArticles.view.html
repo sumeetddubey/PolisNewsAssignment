@@ -10,6 +10,7 @@
     </li>
 </ul>
 
+<p class="lead mt-5" ng-show="model.articles.length === 0">None</p>
 <div class="mt-5">
     <div class="jumbotron" ng-repeat="article in model.articles">
         <a ng-href="{{article.url}}" target="_blank"><h2>{{article.title}}</h2></a>

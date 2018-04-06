@@ -29,10 +29,10 @@
                 .then(
                     function(doc){
                         if(doc.status===201)
-                            toastr.error('Article already exists in favorites!');
+                            toastr.error('Article already exists in saved articles!');
                         else{
                             favorites[article.url]=true;
-                            toastr.success('Article added to favorites');
+                            toastr.success('Article saved');
                         }
                     },
                     function(err){
