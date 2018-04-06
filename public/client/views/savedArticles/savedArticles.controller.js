@@ -5,8 +5,10 @@
     var app = angular.module('newsApp');
     app.controller("SavedArticlesController", SavedArticlesController);
 
-    function SavedArticlesController(UserService){
+    function SavedArticlesController(UserService, toastr){
         var vm=this;
+
+        vm.deleteSavedArticleForUser = deleteSavedArticleForUser;
 
         vm.convertDate = function(ipDate){
             var date = new Date(ipDate);
@@ -19,7 +21,20 @@
             },
             function(err){
                 console.log(err);
-            })
+            });
+
+        function deleteSavedArticleForUser(articleUrl){
+            UserService.deleteSavedArticleForUser(UserService.getUser().username, {articleUrl: articleUrl})
+                .then(
+                    function(doc){
+                        vm.articles=doc.data;
+                        toastr.success('Article removed from saved articles');
+                    },
+                    function(err){
+                        console.log(err);
+                    }
+                )
+        }
 
     }
 })();

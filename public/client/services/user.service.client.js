@@ -12,6 +12,7 @@
             setUser: setUser,
             saveArticle: saveArticle,
             getSavedArticlesForUser: getSavedArticlesForUser,
+            deleteSavedArticleForUser: deleteSavedArticleForUser,
             addSourceForUser: addSourceForUser,
             removeSourceForUser: removeSourceForUser,
             getCurrentSources: getCurrentSources,
@@ -37,6 +38,10 @@
 
         function getSavedArticlesForUser(username){
             return $http.get('/api/user/articles/saved?username=' +username);
+        }
+
+        function deleteSavedArticleForUser(username, article){
+            return $http.put('/api/user/' +username + '/articles/saved/', article);
         }
 
         function addSourceForUser(username, sourceId){

@@ -5,6 +5,7 @@ module.exports = function(app, db){
     app.post("/api/login", login);
     app.put('/api/user/articles/saved/:username', saveArticleForUser);
     app.get('/api/user/articles/saved', getSavedArticlesForUser);
+    app.put('/api/user/:username/articles/saved/', deleteSavedArticleForUser);
     app.get('/api/user/sources', getSourcesForUser);
     app.put('/api/user/sources/:username', addSourceForUser);
     app.delete('/api/user/:username/sources/:sourceId', deleteSourceForUser);
@@ -42,6 +43,18 @@ module.exports = function(app, db){
         else{
             res.status(400).send();
         }
+    }
+
+    function deleteSavedArticleForUser(req, res){
+        var username=req.params.username;
+        var articleUrl=req.body.articleUrl;
+        var doc=db.get('users').find({username: username}).get('savedArticles').remove({"url": articleUrl}).write();
+        if(doc.length>0) {
+            var articles=db.get('users').find({username: username}).get('savedArticles').sortBy('publishedAt').reverse().value();
+            res.send(articles);
+        }
+        else
+            res.status(400).send();
     }
 
     function getSourcesForUser(req, res){

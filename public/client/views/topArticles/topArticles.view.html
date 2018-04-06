@@ -1,7 +1,7 @@
 <div>
     <a ng-href="#/dashboard">Back to Dashboard</a>
     <div class="mt-5 jumbotron" ng-repeat="article in model.articles">
-        <h2>{{article.title}}</h2>
+        <a ng-href="{{article.url}}" target="_blank"><h2>{{article.title}}</h2></a>
         <p>{{model.convertDate(article.publishedAt)}}</p>
         <p class="lead">{{article.description}}</p>
         <hr class="my-4">

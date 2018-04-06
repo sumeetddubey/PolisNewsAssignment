@@ -12,10 +12,11 @@
 
 <div class="mt-5">
     <div class="jumbotron" ng-repeat="article in model.articles">
-        <h2>{{article.title}}</h2>
+        <a ng-href="{{article.url}}" target="_blank"><h2>{{article.title}}</h2></a>
         <p>{{model.convertDate(article.publishedAt)}}</p>
         <p class="lead">{{article.description}}</p>
         <hr class="my-4">
         <a ng-href="{{article.url}}" target="_blank"><img class="article-image" ng-src="{{article.urlToImage}}"></a>
+        <img class="icon-delete" ng-click="model.deleteSavedArticleForUser(article.url)" src="client/static/icons/delete.png">
     </div>
 </div>
