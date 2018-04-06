@@ -18,7 +18,8 @@
             <p class="card-text">{{source.description}}</p>
         </div>
         <div class="card-footer">
-            <a ng-click="model.addSource(source.id)" class="btn btn-primary">Follow source</a>
+            <a ng-click="model.addSource(source.id)" class="btn btn-outline-success">Follow source</a>
+            <a ng-href="{{source.url}}" target="_blank" class="btn btn-outline-primary">Visit page</a>
         </div>
     </div>
 </div>

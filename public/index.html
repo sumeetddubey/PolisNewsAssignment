@@ -17,7 +17,10 @@
         <div class="col-10"><h2>News App</h2></div>
         <div class="col-2"><button ng-show="model.loggedIn()" ng-click="model.logout()" class="btn btn-danger btn-logout">Logout</button></div>
     </div>
-    <div ng-view></div>
+    <div class="mb-5" ng-view></div>
+    <div class="footer">
+        <p>Powered by <a href="https://newsapi.org" target="_blank">newsapi.org</a></p>
+    </div>
 </div>
 
 
